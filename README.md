@@ -78,6 +78,13 @@ You must copy the received link, follow it, log in and then enter the received c
 
 ### Usage
 
+Create Wrapper
+
+```java
+WakaTimeWrapper wrapper = new WakaTimeWrapper(auth);
+```
+
+Get All Time Since Today
 ```java
 System.out.println(wrapper.getAllTimeSinceToday("Your Project"));
 ```
