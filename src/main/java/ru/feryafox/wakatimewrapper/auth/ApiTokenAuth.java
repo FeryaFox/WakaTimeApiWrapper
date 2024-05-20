@@ -7,7 +7,7 @@ public class ApiTokenAuth implements BaseAuth{
     private String api_token_base64;
     private String api_token;
 
-    ApiTokenAuth(String api_token){
+    public ApiTokenAuth(String api_token){
         this.api_token_base64 = Base64.getEncoder().encodeToString(api_token.getBytes());
         this.api_token = api_token;
     }
